@@ -1,0 +1,27 @@
+version: "3.5"
+
+services:
+  init:
+    image: odinprotocol/core:testnet
+    container_name: init
+    command: /init.sh
+    volumes:
+      - vol:/root/.band
+      - ./genesis.json:/genesis.json
+      - ./init.sh:/init.sh
+  node:
+    image: odinprotocol/core:testnet
+    container_name: node
+    depends_on:
+      - init
+    ports:
+      - 26658:26658 # ABCI
+      - 26657:26657 # RPC
+      - 26656:26656 # P2P
+      - 9090:9090 # gRPC
+      - 1317:1317 # REST API
+    command: bandd start --rpc.laddr tcp://0.0.0.0:26657 --p2p.persistent_peers 11392b605378063b1c505c0ab123f04bd710d7d7@35.195.4.110:26656,0851086afcd835d5a6fb0ffbf96fcdf74fec742e@34.78.138.110:26656,7b58b086dd915a79836eb8bfa956aeb9488d13b0@34.78.239.23:26656,63808bd64f2ec19acb2a494c8ce8467c595f6fba@34.77.171.169:26656
+    volumes:
+      - vol:/root/.band
+volumes:
+  vol:

@@ -1,0 +1,10 @@
+version: "3.5"
+
+services:
+
+  reporter:
+    image: odinprotocol/core:testnet
+    container_name: reporter
+    command: sh -c "/init.sh supplier tcp://node:26657 && yoda run --node tcp://node:26657"
+    volumes:
+      - ./reporter.sh:/init.sh
