@@ -44,6 +44,8 @@ _Note: Check our nodes real-time logs with the following command:_
 
 ```docker-compose logs -f --tail 100 node```
 
+[important] Wait for the node to catch up with the remotes, to query it or send transactions 
+
 ## Becoming validator
 First of all, you need to log into your docker container
 
