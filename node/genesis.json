@@ -1,6 +1,6 @@
 {
   "genesis_time": "2021-04-05T13:49:44.41172346Z",
-  "chain_id": "odin-testnet",
+  "chain_id": "odin-testnet-vale",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -124,12 +124,12 @@
           "address": "odin1nnfeguq30x6nwxjhaypxymx3nulyspsuja4a2x",
           "coins": [
             {
-              "denom": "minigeo",
-              "amount": "100000000000000"
-            },
-            {
               "denom": "loki",
               "amount": "10000000000000"
+            },
+            {
+              "denom": "minigeo",
+              "amount": "100000000000000"
             }
           ]
         },
@@ -137,12 +137,12 @@
           "address": "odin1pl07tk6hcpp2an3rug75as4dfgd743qp80g63g",
           "coins": [
             {
-              "denom": "minigeo",
-              "amount": "100000000000000"
-            },
-            {
               "denom": "loki",
               "amount": "10000000000000"
+            },
+            {
+              "denom": "minigeo",
+              "amount": "100000000000000"
             }
           ]
         },
@@ -185,12 +185,12 @@
       ],
       "supply": [
         {
-          "denom": "minigeo",
-          "amount": "1000000000000000"
-        },
-        {
           "denom": "loki",
           "amount": "100000000000000"
+        },
+        {
+          "denom": "minigeo",
+          "amount": "1000000000000000"
         }
       ],
       "denom_metadata": []
@@ -232,6 +232,16 @@
             "from": "wbtc",
             "to": "loki",
             "rate_multiplier": "3.000000000000000000"
+          },
+          {
+            "from": "odin",
+            "to": "loki",
+            "rate_multiplier": "100000.000000000000000000"
+          },
+          {
+            "from": "loki",
+            "to": "odin",
+            "rate_multiplier": "0.000000100000000000"
           }
         ]
       }
@@ -252,12 +262,12 @@
       "fee_pool": {
         "community_pool": [
           {
-            "denom": "minigeo",
-            "amount": "800000000000000"
-          },
-          {
             "denom": "loki",
             "amount": "29992000000000"
+          },
+          {
+            "denom": "minigeo",
+            "amount": "800000000000000"
           }
         ]
       },
@@ -335,7 +345,7 @@
         "annual_provisions": "0.000100000000000000"
       },
       "params": {
-        "eth_integration_address": "0xf03dc8Ac758696EDF5C60E0C705391d1715F1E3C",
+        "eth_integration_address": "0xe11a6E1eb2D61590fEBD8d694e39C4428e681815",
         "mint_denom": "loki",
         "inflation_rate_change": "0.130000000000000000",
         "inflation_max": "0.200000000000000000",
@@ -409,7 +419,7 @@
     "staking": {
       "params": {
         "unbonding_time": "1814400s",
-        "max_validators": 100,
+        "max_validators": 30,
         "max_entries": 7,
         "historical_entries": 1000,
         "bond_denom": "loki"

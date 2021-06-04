@@ -2,7 +2,7 @@
 
 rm -rf ~/.band
 
-bandd init node --chain-id odin-testnet
+bandd init node --chain-id odin-testnet-vale
 
 cp /genesis.json ~/.band/config/genesis.json
 

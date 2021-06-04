@@ -7,7 +7,7 @@ echo "usage ketchup faculty bench jewel rocket latin absurd decide field party r
    | bandd keys add $1 --recover --keyring-backend test
 
 # config chain id
-yoda config chain-id odin-testnet
+yoda config chain-id odin-testnet-vale
 
 # add validator to yoda config
 yoda config validator $(bandd keys show $1 -a --bech val --keyring-backend test)
@@ -29,10 +29,10 @@ yoda keys add reporter
 # send band tokens to reporters
 for rec in $(yoda keys list -a)
 do
-  echo "y" | bandd tx bank send $1 $rec 1000000odin --broadcast-mode block --keyring-backend test --chain-id odin-testnet --node $2
+  echo "y" | bandd tx bank send $1 $rec 1000000odin --broadcast-mode block --keyring-backend test --chain-id odin-testnet-vale --node $2
 done
 
 # add reporter to bandchain
-echo "y" | bandd tx oracle add-reporters $(yoda keys list -a) --from $1 --broadcast-mode block --keyring-backend test --chain-id odin-testnet --node $2
+echo "y" | bandd tx oracle add-reporters $(yoda keys list -a) --from $1 --broadcast-mode block --keyring-backend test --chain-id odin-testnet-vale --node $2
 
 echo "Yoda configured"
