@@ -44,7 +44,7 @@ _Note: Check our nodes real-time logs with the following command:_
 
 ```docker-compose logs -f --tail 100 node```
 
-[important] Wait for the node to catch up with the remotes, to query it or send transactions 
+**[IMPORTANT]** Wait for the node to catch up with the remotes, to query it or send transactions 
 
 ## Becoming validator
 First of all, you need to log into your docker container
@@ -104,7 +104,8 @@ bandd tx staking create-validator \
     --min-self-delegation 1 \
     --moniker <your-moniker> \
     --pubkey $(bandd tendermint show-validator) \
-    --chain-id odin-testnet-vale
+    --chain-id odin-testnet-vale \
+    --node http://34.77.171.169:26657
 ```
 
 ### Verifying the result
