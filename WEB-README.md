@@ -44,14 +44,14 @@ It will look something like this:
 
 ```json
 {
-  "address": "8EE8B2B7D772490CB6FCF1B668109E126A513BD3",
+  "address": "4174F0A75D7CDCFF479E20119AE075D10F929218",
   "pub_key": {
-    "type": "tendermint/PubKeyEd25519",
-    "value": "ArO3rtvJ0Y22fCMmW5OUx6K9NKvIk1c6E2USzhzh+uI="
+    "type": "tendermint/PubKeySecp256k1",
+    "value": "A0LCeCUHNTPz3TZt4zkrugkLYkcN2gbMdjATpUzQ/3Rm"
   },
   "priv_key": {
-    "type": "tendermint/PrivKeyEd25519",
-    "value": "ViH/HeIt/KvUN6mAxexbtPm0qRhMSJRLxNwTguPXpCsCs7eu28nRjbZ8IyZbk5THor00q8iTVzoTZRLOHOH64g=="
+    "type": "tendermint/PrivKeySecp256k1",
+    "value": "qlkQMUr9ugbXvV62YmPa0HB9AA9FcppIrVmypTxskg8="
   }
 }
 ```

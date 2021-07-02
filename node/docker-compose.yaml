@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   init:
-    image: odinprotocol/core:testnet
+    image: odinprotocol/core:testnet-vidar
     container_name: init
     command: /init.sh
     volumes:
@@ -10,7 +10,7 @@ services:
       - ./genesis.json:/genesis.json
       - ./init.sh:/init.sh
   node:
-    image: odinprotocol/core:testnet
+    image: odinprotocol/core:testnet-vidar
     container_name: node
     depends_on:
       - init
