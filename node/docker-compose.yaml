@@ -8,6 +8,7 @@ services:
     volumes:
       - vol:/root/.band
       - ./genesis.json:/genesis.json
+      - ./oracle-priv-key.json:/priv_validator_key.json
       - ./init.sh:/init.sh
   node:
     image: odinprotocol/core:testnet-vidar

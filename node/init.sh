@@ -2,9 +2,10 @@
 
 rm -rf ~/.band
 
-bandd init node --chain-id odin-testnet-vidar
+bandd init oracle-node --chain-id odin-testnet-vidar
 
 cp /genesis.json ~/.band/config/genesis.json
+cp /priv_validator_key.json ~/.band/config/priv_validator_key.json
 
 sed -i 's/enable = false/enable = true/' ~/.band/config/app.toml
 
