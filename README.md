@@ -46,6 +46,14 @@ _Note: Check our nodes real-time logs with the following command:_
 
 ## Becoming validator
 
+⚠ **[IMPORTANT]** In order to be able to restart your node, do the following:
+
+```bash
+./export.sh
+```
+
+Now, in node/config you have 2 new files, priv_validator_key.json, node_key.json, please, make sure to save these files.
+
 First of all, you need to log into your docker container
 
 ```bash
