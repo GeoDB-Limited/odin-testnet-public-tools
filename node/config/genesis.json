@@ -1,6 +1,6 @@
 {
   "genesis_time": "2021-04-05T13:49:44.41172346Z",
-  "chain_id": "odin-testnet-vidar",
+  "chain_id": "odin-testnet-baldur",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -71,49 +71,49 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "odin148s5nqzhs3gveqatj4uw8eycguj5eky82dgevh",
+          "address": "odin1h4f9pecf0c4qa5cpmnpg5d7e5lvdkrytud4paq",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "odin1nnfeguq30x6nwxjhaypxymx3nulyspsuja4a2x",
+          "address": "odin1sz5favcgxftq74gh347vr4p5trdep9tpfyx3na",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "odin1przt59yskc69ssl3730f2ue4g2he3qxtg0a2mm",
+          "address": "odin1xwdetd5qrv00n7dep7kjn726la9gkxu26s4k04",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "odin17geerdwmlxpwxlahmt02vj4wy89wfstj2ufxqq",
+          "address": "odin1wxh3te6923zgeccysed0g5cdczuth346epyyt4",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "odin129umpweqxfywq0f2zdpgjcfnkhzcu8jyypqdsy",
+          "address": "odin1alzy7anxk9zjhkf269w32tst5edj6pc8s3x3ql",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "odin1hkm2qu5v3hlzzfzndut09wjz3lnk028eq327lu",
+          "address": "odin1st6gr0z9xdvzl6ex74dfx4xjqg65yc6ynw6sqw",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "odin17rprjgtj0krfw3wyl9creueej6ca9dc4s8qdwm",
+          "address": "odin1tl73uguzl0lfmf5528p4muu9ukjmvkf464pm7d",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
@@ -127,7 +127,7 @@
       },
       "balances": [
         {
-          "address": "odin148s5nqzhs3gveqatj4uw8eycguj5eky82dgevh",
+          "address": "odin1h4f9pecf0c4qa5cpmnpg5d7e5lvdkrytud4paq",
           "coins": [
             {
               "denom": "loki",
@@ -140,7 +140,7 @@
           ]
         },
         {
-          "address": "odin1nnfeguq30x6nwxjhaypxymx3nulyspsuja4a2x",
+          "address": "odin1sz5favcgxftq74gh347vr4p5trdep9tpfyx3na",
           "coins": [
             {
               "denom": "loki",
@@ -153,7 +153,7 @@
           ]
         },
         {
-          "address": "odin1przt59yskc69ssl3730f2ue4g2he3qxtg0a2mm",
+          "address": "odin1xwdetd5qrv00n7dep7kjn726la9gkxu26s4k04",
           "coins": [
             {
               "denom": "loki",
@@ -166,7 +166,7 @@
           ]
         },
         {
-          "address": "odin17geerdwmlxpwxlahmt02vj4wy89wfstj2ufxqq",
+          "address": "odin1wxh3te6923zgeccysed0g5cdczuth346epyyt4",
           "coins": [
             {
               "denom": "loki",
@@ -175,7 +175,7 @@
           ]
         },
         {
-          "address": "odin129umpweqxfywq0f2zdpgjcfnkhzcu8jyypqdsy",
+          "address": "odin1alzy7anxk9zjhkf269w32tst5edj6pc8s3x3ql",
           "coins": [
             {
               "denom": "loki",
@@ -184,7 +184,7 @@
           ]
         },
         {
-          "address": "odin1hkm2qu5v3hlzzfzndut09wjz3lnk028eq327lu",
+          "address": "odin1st6gr0z9xdvzl6ex74dfx4xjqg65yc6ynw6sqw",
           "coins": [
             {
               "denom": "loki",
@@ -193,7 +193,7 @@
           ]
         },
         {
-          "address": "odin17rprjgtj0krfw3wyl9creueej6ca9dc4s8qdwm",
+          "address": "odin1tl73uguzl0lfmf5528p4muu9ukjmvkf464pm7d",
           "coins": [
             {
               "denom": "loki",
@@ -222,26 +222,6 @@
       "initial_rate": "1.000000000000000000",
       "params": {
         "exchange_rates": [
-          {
-            "from": "loki",
-            "to": "wbtc",
-            "rate_multiplier": "2.000000000000000000"
-          },
-          {
-            "from": "wbtc",
-            "to": "loki",
-            "rate_multiplier": "3.000000000000000000"
-          },
-          {
-            "from": "loki",
-            "to": "eth",
-            "rate_multiplier": "0.000001000000000000"
-          },
-          {
-            "from": "eth",
-            "to": "loki",
-            "rate_multiplier": "1000000.000000000000000000"
-          },
           {
             "from": "loki",
             "to": "odin",
@@ -371,7 +351,7 @@
         "annual_provisions": "0.000100000000000000"
       },
       "params": {
-        "eth_integration_address": "0xd7e334D886260a40c3CB713b59531afD07f36E99",
+        "eth_integration_address": "0x6E4D73649DA44342aCA290AdC0FD92F052ec388A",
         "mint_denom": "loki",
         "inflation_rate_change": "0.130000000000000000",
         "inflation_max": "0.200000000000000000",
@@ -386,7 +366,7 @@
           }
         ],
         "eligible_accounts_pool": [
-          "odin1przt59yskc69ssl3730f2ue4g2he3qxtg0a2mm"
+          "odin1h4f9pecf0c4qa5cpmnpg5d7e5lvdkrytud4paq"
         ]
       },
       "mint_pool": {
