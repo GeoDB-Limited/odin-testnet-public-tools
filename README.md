@@ -103,7 +103,7 @@ You will be provided with loki tokens.
 ### Checking balance
 
 ```
-bandd query bank balances <you-wallet> --chain-id odin-testnet-baldur --node http://34.77.171.169:26657
+bandd query bank balances <you-wallet> --chain-id odin-testnet-heimdall --node http://34.77.171.169:26657
 ```
 
 ### Sending transaction to become a validator
@@ -120,7 +120,7 @@ bandd tx staking create-validator \
     --min-self-delegation 1 \
     --moniker <your-moniker> \
     --pubkey $(bandd tendermint show-validator) \
-    --chain-id odin-testnet-baldur \
+    --chain-id odin-testnet-heimdall \
     --node http://34.77.171.169:26657
 ```
 
@@ -129,7 +129,7 @@ bandd tx staking create-validator \
 Perform the following command, and among the validators find the one with your moniker
 
 ```bash
-bandd query staking validators --chain-id odin-testnet-baldur --node http://34.77.171.169:26657
+bandd query staking validators --chain-id odin-testnet-heimdall --node http://34.77.171.169:26657
 ```
 
 ## Delegating tokens to someone
@@ -145,7 +145,7 @@ bandd keys show <your-wallet> --bech val -a
 Otherwise
 
 ```bash
-bandd query staking validators --chain-id odin-testnet-baldur --node http://34.77.171.169:26657
+bandd query staking validators --chain-id odin-testnet-heimdall --node http://34.77.171.169:26657
 ```
 
 will return all the system validators, and you can get odinvaloper... address there
@@ -155,6 +155,6 @@ bandd tx staking delegate \
     --validator-addr <validator-operator-address> \ 
     --amount <your-amount-to-delegate>loki \
     --from <your-wallet-name> \
-    --chain-id odin-testnet-baldur \
+    --chain-id odin-testnet-heimdall \
     --node http://34.77.171.169:26657
 ```
