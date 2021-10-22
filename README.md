@@ -152,8 +152,8 @@ will return all the system validators, and you can get odinvaloper... address th
 
 ```bash
 bandd tx staking delegate \
-    --validator-addr <validator-operator-address> \ 
-    --amount <your-amount-to-delegate>loki \
+    <validator-operator-address> \
+    <your-amount-to-delegate>loki \
     --from <your-wallet-name> \
     --chain-id odin-testnet-heimdall \
     --node http://34.77.171.169:26657
